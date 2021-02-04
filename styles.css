@@ -1,0 +1,143 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+section.profile-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  background-color: #19a2ae;
+  height: 100vh;
+}
+
+section.profile-card .background {
+  position: relative;
+}
+
+section.profile-card .background img {
+  position: absolute;
+}
+
+section.profile-card .background .circle-1 {
+  right: -150px;
+  bottom: -110px;
+}
+
+@media only screen and (max-width: 375px) {
+  section.profile-card .background .circle-1 {
+    right: -161px;
+  }
+}
+
+section.profile-card .background .circle-2 {
+  top: 15px;
+  left: 150px;
+}
+
+@media only screen and (max-width: 375px) {
+  section.profile-card .background .circle-2 {
+    top: -35px;
+    left: 100px;
+  }
+}
+
+section.profile-card .profile-container {
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 350px;
+}
+
+@media only screen and (max-width: 375px) {
+  section.profile-card .profile-container {
+    width: 325px;
+  }
+}
+
+section.profile-card .profile-container .header {
+  background-image: url("./images/bg-pattern-card.svg");
+  height: 140px;
+}
+
+@media only screen and (max-width: 375px) {
+  section.profile-card .profile-container .header {
+    background-position-x: -10px;
+  }
+}
+
+section.profile-card .profile-container .main {
+  background-color: white;
+  border-bottom: solid 1px #cfcece;
+  height: auto;
+}
+
+section.profile-card .profile-container .main img.profile-picture {
+  display: block;
+  position: relative;
+  border: solid 5px white;
+  border-radius: 50%;
+  margin: 0px auto -53px auto;
+  bottom: 53px;
+}
+
+section.profile-card .profile-container .main h4.profile-name-and-age {
+  margin: 22px 0 10px 0;
+  color: #2d3248;
+}
+
+section.profile-card .profile-container .main h4.profile-name-and-age span.profile-age {
+  color: #969696;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+section.profile-card .profile-container .main h5.profile-city {
+  color: #969696;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+section.profile-card .profile-container .footer {
+  background-color: white;
+}
+
+section.profile-card .profile-container .footer .items-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 23px 0;
+  margin: 0 20px;
+}
+
+section.profile-card .profile-container .footer .items-container .item-statistic {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section.profile-card .profile-container .footer .items-container .item-statistic h4.value-statistic {
+  margin-bottom: 5px;
+  color: #2d3248;
+}
+
+section.profile-card .profile-container .footer .items-container .item-statistic h6.name-statistic {
+  font-weight: 400;
+  color: #969696;
+}
+/*# sourceMappingURL=styles.css.map */
